@@ -67,12 +67,12 @@ public class XmlOrBean {
     /**
      * 将map装换为对应bean
      * @param map
-     * @return
+     * @return 返回 null 表示controller层返回success
      */
     private static Object mapToBean(Map<String, String> map) {
         String type = map.get("MsgType");
         try {
-            if (type.equals(VxMsgEnum.EVENT.val)) {
+            if (type.equals(VxMsgEnum.EVENT.val)) { // 事件消息
                 String evenType = map.get("Event");
                 if (evenType.equals(VxEvenEnum.CLICK.val)){
                     EvenMenuClickMsg clickMsg = new EvenMenuClickMsg();
