@@ -7,6 +7,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 /**
+ * 微信验证url界面token工具类
  * @Author: wugui
  * @Date 2018-7-17 14:52
  */

@@ -1,6 +1,7 @@
 package cn.sharehe.weixin.constant;
 
 /**
+ * 微信控制的一些常量
  * @Author: wugui
  * @Date 2018-7-17 11:12
  */

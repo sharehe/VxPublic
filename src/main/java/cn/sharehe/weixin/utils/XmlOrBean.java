@@ -25,7 +25,6 @@ import java.util.Map;
 /**
  * 将xml转换为消息实体类
  * 将消息实体类装换为xml
- *
  * @Author: wugui
  * @Date 2018-7-18 10:38
  */
