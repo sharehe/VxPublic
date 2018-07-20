@@ -35,9 +35,11 @@ vxinterface.GetToken中的getToken方法为获取access_token，该方法进行�
 
 ## 接口使用
 
-1. 添加菜单如何使用添加菜单接口可以参照test.*.menu.AddMenu测试类中的代码使用
-2. 素材管理，可查看test.*.material.*中的实列使用
-3. 账号管理， 可查看test.*.account.*中的实列使用
+1. 注意 这里需要特别注意 由于在test测试我为了加快测试速度使用的main所以在里面测试并没有启动工程，则需要手动说的token则需要先在vxinterface.GetToken中去把Token获得并设置为Token的属性才可使用以下测试类
+2. 添加菜单如何使用添加菜单接口可以参照test.*.menu.AddMenu测试类中的代码使用
+3. 素材管理，可查看test.*.material.*中的实列使用
+4. 账号管理， 可查看test.*.account.*中的实列使用
+5. 注意  测试完成后，启动项目需要将Token属性设置为null
 
 ## 部分包说明
 
