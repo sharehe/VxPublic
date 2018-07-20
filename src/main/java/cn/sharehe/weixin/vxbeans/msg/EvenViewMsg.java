@@ -6,13 +6,13 @@ package cn.sharehe.weixin.vxbeans.msg;
  * @Date 2018-7-18 16:34
  */
 public class EvenViewMsg extends EvenMsgBase {
-    private String MenuID;
+    private String MenuId;
 
-    public String getMenuID() {
-        return MenuID;
+    public String getMenuId() {
+        return MenuId;
     }
 
-    public void setMenuID(String menuID) {
-        MenuID = menuID;
+    public void setMenuId(String menuId) {
+        MenuId = menuId;
     }
 }
