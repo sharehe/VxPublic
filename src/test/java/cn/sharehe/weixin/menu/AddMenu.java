@@ -1,4 +1,5 @@
 package cn.sharehe.weixin.menu;
+import cn.sharehe.weixin.constant.VxConfigEnum;
 import cn.sharehe.weixin.vxbeans.menu.Menu;
 import cn.sharehe.weixin.vxbeans.menu.OneMenu;
 import cn.sharehe.weixin.vxbeans.menu.TwoMenu;
@@ -79,11 +80,17 @@ public class AddMenu{
 
         t = new TwoMenu();
         listTwo.add(t);
-        t.setName("网页");
+        t.setName("普通网页");
         t.setType(VxMenuEnum.VIEW.val);
         t.setKey(VxMenuEnum.VIEW.val);
         t.setUrl("http://boenfu.cn");
 
+        t = new TwoMenu();
+        listTwo.add(t);
+        t.setName("获取openid");
+        t.setType(VxMenuEnum.VIEW.val);
+        t.setKey(VxMenuEnum.VIEW.val);
+        t.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid="+ VxConfigEnum.APPID.val +"&redirect_uri=http://wugui.tunnel.qydev.com/vx/html/one&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect");
         menu.setButton(listOne);
         System.out.println(MenuInterface.addMenu(menu));
     }

@@ -1,3 +1,4 @@
 server:
   servlet:
     context-path: /vx
+  port: 80

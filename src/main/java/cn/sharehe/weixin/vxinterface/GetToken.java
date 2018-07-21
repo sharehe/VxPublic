@@ -10,7 +10,7 @@ import com.alibaba.fastjson.JSONObject;
  * @Date 2018-7-17 11:15
  */
 public class GetToken {
-    private static String Token = null;
+    private static String Token = "11_Rwf_vNCLoGB2NyalxsEyyMLs67MKWRrTAVob8S8TMFb1leloqt1MLWZwCGkJ1F_3NfGRlyzA5QgSabfbF4Y__vK8SytTeE_WVwUZgFF8Sen41EGo0TJi14iKIVuqFWYutgNUxEsrmZbY3EwuORSaAJAADE";
     public static String getToken(){
         if (Token != null)
             return Token;
